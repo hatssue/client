@@ -12,7 +12,7 @@ class SampleView extends StatelessWidget {
             onPressed: () {
               context.go('/');
             },
-            child: Text("홈 화면으로 이동")
+            child: Text("홈 화면으로")
         ),
       )
     );
