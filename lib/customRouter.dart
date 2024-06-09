@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import 'package:hatssue/sampleView.dart';
 import 'package:hatssue/calendarView.dart';
+import 'package:hatssue/calendarSampleView.dart';
 
 
 class CustomRouter {
@@ -10,7 +11,8 @@ class CustomRouter {
       routes: [
         GoRoute(path: "/", builder: (context, state) => MyHomePage(title: "제목")),
         GoRoute(path: "/sampleView", builder: (context, state) => SampleView()),
-        GoRoute(path: "/calendarView", builder: (context, state) => CalendarView()),
+        GoRoute(path: "/calendarView", builder: (context, state) => const CalendarView()),
+        GoRoute(path: "/calendarSample", builder: (context, state) => CalendarSampleView())
     ]
   );
 }
