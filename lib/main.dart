@@ -47,6 +47,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: Text("샘플 화면으로 이동")
             ),
+            ElevatedButton(
+                onPressed: () {
+                  context.go('/calendarView');
+                },
+                child: Text("날짜 선택 화면으로 이동")
+            ),
           ],
         )
       ),
