@@ -1,9 +1,9 @@
 import 'package:hatssue/main.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:hatssue/sampleView.dart';
-import 'package:hatssue/calendarView.dart';
-import 'package:hatssue/calendarSampleView.dart';
+import 'package:hatssue/sample_view.dart';
+import 'package:hatssue/calendar_view.dart';
+import 'package:hatssue/calendar_sample_view.dart';
 
 
 class CustomRouter {

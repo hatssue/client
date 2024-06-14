@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'customRouter.dart';
+import 'managers/custom_router.dart';
 
 void main() {
   runApp(const MyApp());
