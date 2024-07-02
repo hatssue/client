@@ -41,6 +41,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             ElevatedButton(
                 onPressed: () {
+                  context.go('/newChallenge');
+                },
+                child: Text("챌린지 입력 화면으로 이동")
+            ),
+            ElevatedButton(
+                onPressed: () {
                   context.go('/sampleView');
                 },
                 child: Text("샘플 화면으로 이동")
