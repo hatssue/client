@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:intl/date_symbol_data_local.dart';
 import 'package:go_router/go_router.dart';
 
 import 'components/examples/pages/basic.dart';
-import 'components/examples/pages/complex.dart';
 import 'components/examples/pages/events.dart';
-import 'components/examples/pages/multi.dart';
 import 'components/examples/pages/range.dart';
 
 class CalendarSampleView extends StatefulWidget {
@@ -20,7 +17,7 @@ class _CalendarSampleView extends State<CalendarSampleView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TableCalendar Example'),
+        title: const Text('TableCalendar Example'),
       ),
       body: Center(
         child: Column(
@@ -28,33 +25,37 @@ class _CalendarSampleView extends State<CalendarSampleView> {
           children: [
             const SizedBox(height: 20.0),
             ElevatedButton(
-              child: Text('홈으로 이동'),
-              onPressed: () => {
-                context.go('/')
-              }
+              child: const Text('홈으로 이동'),
+              onPressed: () => {context.go('/')},
             ),
             const SizedBox(height: 20.0),
             ElevatedButton(
-              child: Text('Basics'),
+              child: const Text('Basics'),
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => TableBasicsExample()),
+                MaterialPageRoute(
+                  builder: (_) => TableBasicsExample(),
+                ),
               ),
             ),
             const SizedBox(height: 12.0),
             ElevatedButton(
-              child: Text('Range Selection'),
+              child: const Text('Range Selection'),
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => TableRangeExample()),
+                MaterialPageRoute(
+                  builder: (_) => TableRangeExample(),
+                ),
               ),
             ),
             const SizedBox(height: 12.0),
             ElevatedButton(
-              child: Text('Events'),
+              child: const Text('Events'),
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => TableEventsExample()),
+                MaterialPageRoute(
+                  builder: (_) => TableEventsExample(),
+                ),
               ),
             ),
             const SizedBox(height: 12.0),

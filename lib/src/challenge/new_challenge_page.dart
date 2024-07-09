@@ -2,41 +2,43 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class NewChallengePage extends StatelessWidget {
+  const NewChallengePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
-        title: Text('새로운 챌린지 만들기'),
+        title: const Text('새로운 챌린지 만들기'),
         backgroundColor: Colors.black,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            TextField(
+            const TextField(
               decoration: InputDecoration(
                 labelText: '챌린지 제목을 입력해주세요',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 20),
-            Align(
+            const SizedBox(height: 20),
+            const Align(
               alignment: Alignment.centerLeft,
               child: Text(
                 '많이하는 챌린지를 추천해드려요',
                 style: TextStyle(fontSize: 16),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Expanded(
               child: ListView(
-                children: [
+                children: const [
                   ChallengeButton('🧘 스트레칭 🧘'),
                   ChallengeButton('✏️ 일기쓰기 ✏️'),
                   ChallengeButton('🚶 산책하기 🚶'),
@@ -46,16 +48,17 @@ class NewChallengePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 context.go('/newChallengeNotificationPage');
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.amber,
-                padding: EdgeInsets.symmetric(vertical: 15, horizontal: 100),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 15, horizontal: 100),
               ),
-              child: Text('다음', style: TextStyle(fontSize: 18)),
+              child: const Text('다음', style: TextStyle(fontSize: 18)),
             ),
           ],
         ),
@@ -67,7 +70,7 @@ class NewChallengePage extends StatelessWidget {
 class ChallengeButton extends StatelessWidget {
   final String title;
 
-  ChallengeButton(this.title);
+  const ChallengeButton(this.title, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -79,11 +82,11 @@ class ChallengeButton extends StatelessWidget {
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.grey[850],
-          padding: EdgeInsets.symmetric(vertical: 15),
+          padding: const EdgeInsets.symmetric(vertical: 15),
         ),
         child: Text(
           title,
-          style: TextStyle(fontSize: 18),
+          style: const TextStyle(fontSize: 18),
         ),
       ),
     );

@@ -1,23 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'utils/custom_router.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: CustomRouter.router,
-      title: "Flutter GoRouter Example",
-    );
-  }
-}
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -39,12 +21,6 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
           child: Column(
         children: [
-          ElevatedButton(
-            onPressed: () {
-              context.go('/newChallenge');
-            },
-            child: const Text("챌린지 입력 화면으로 이동"),
-          ),
           ElevatedButton(
             onPressed: () {
               context.go('/calendarSample');
