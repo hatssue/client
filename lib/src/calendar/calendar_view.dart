@@ -10,10 +10,8 @@ class CalendarView extends StatelessWidget {
   // final DateTime _firstDay = DateTime(today.year, today.month - 3, today.day);
   // final DateTime _lastDay = DateTime(today.year, today.month + 3, today.day);
 
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
