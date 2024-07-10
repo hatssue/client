@@ -6,9 +6,9 @@ import 'package:hatssue/theme/res/typo.dart';
 class LightTheme implements AppTheme {
   @override
   AppColor color = AppColor(
-    surface: Palette.primary01,
+    surface: Palette.grey01,
     // background: background,
-    text: Palette.grey01,
+    text: Palette.primary02,
     subtext: Palette.primary02,
     // toastContainer: toastContainer,
     // onToastContainer: onToastContainer,
