@@ -10,7 +10,7 @@ class CustomRouter {
   static GoRouter router = GoRouter(routes: [
     GoRoute(
       path: "/",
-      builder: (context, state) => const MyHomePage(title: "제목"),
+      builder: (context, state) => const MyHomePage(title: "Main"),
     ),
     GoRoute(
       path: "/calendarView",
