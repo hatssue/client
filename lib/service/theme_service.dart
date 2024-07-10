@@ -19,6 +19,4 @@ class ThemeService extends Notifier<AppTheme> {
 
 // buildContext에 추가
 // extension ThemeServiceExt on BuildContext {
-//   ThemeService get themeService => listen<ThemeService>();
-//   AppTheme get theme => themeService
 // }
