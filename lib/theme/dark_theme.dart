@@ -6,7 +6,7 @@ import 'package:hatssue/theme/res/typo.dart';
 class DarkTheme implements AppTheme {
   @override
   AppColor color = AppColor(
-    surface: Palette.primary01,
+    surface: Palette.primary02,
     // background: background,
     text: Palette.grey01,
     subtext: Palette.primary02,

@@ -6,11 +6,11 @@ import 'package:hatssue/src/samples/calendar_sample_view.dart';
 import 'package:hatssue/src/challenge/new_challenge_page.dart';
 import 'package:hatssue/src/challenge/new_challenge_notification_page.dart';
 
-class RouterManager {
+class CustomRouter {
   static GoRouter router = GoRouter(routes: [
     GoRoute(
       path: "/",
-      builder: (context, state) => const Home(title: "Main"),
+      builder: (context, state) => const Home(title: "home"),
     ),
     GoRoute(
       path: "/calendarView",
