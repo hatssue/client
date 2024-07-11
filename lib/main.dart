@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hatssue/service/theme_service.dart';
+import 'package:hatssue/theme/foundation/app_theme.dart';
 import 'utils/custom_router.dart';
 
 void main() {
@@ -10,14 +12,29 @@ void main() {
   );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: CustomRouter.router,
-      debugShowCheckedModeBanner: false,
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Consumer(
+      builder: (context, ref, child) {
+        final AppTheme theme = ref.watch(themeNotifierProvider);
+        return MaterialApp.router(
+            routerConfig: CustomRouter.router,
+            debugShowCheckedModeBanner: false,
+            // theme: theme,
+            theme: ThemeData(
+              appBarTheme: AppBarTheme(
+                backgroundColor: theme.color.surface,
+                elevation: 0,
+                centerTitle: false,
+                iconTheme: IconThemeData(
+                  color: theme.color.text,
+                ),
+              ),
+            ));
+      },
     );
   }
 }
