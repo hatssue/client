@@ -1,64 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hatssue/service/theme_service.dart';
+import 'package:hatssue/theme/foundation/app_theme.dart';
 import 'utils/custom_router.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: CustomRouter.router,
-      title: "Flutter GoRouter Example",
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-          child: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              context.go('/newChallenge');
-            },
-            child: const Text("챌린지 입력 화면으로 이동"),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              context.go('/calendarSample');
-            },
-            child: const Text("캘린더 샘플 화면으로 이동"),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              context.go('/calendarView');
-            },
-            child: const Text("날짜 선택 화면으로 이동"),
-          ),
-        ],
-      )),
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Consumer(
+      builder: (context, ref, child) {
+        final AppTheme theme = ref.watch(themeNotifierProvider);
+        return MaterialApp.router(
+            routerConfig: CustomRouter.router,
+            debugShowCheckedModeBanner: false,
+            // theme: theme,
+            theme: ThemeData(
+              appBarTheme: AppBarTheme(
+                backgroundColor: theme.color.surface,
+                elevation: 0,
+                centerTitle: false,
+                iconTheme: IconThemeData(
+                  color: theme.color.text,
+                ),
+              ),
+            ));
+      },
     );
   }
 }
