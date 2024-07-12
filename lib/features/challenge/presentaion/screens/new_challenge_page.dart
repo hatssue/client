@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hatssue/service/theme/theme_service.dart';
+import 'package:hatssue/shared/button/button.dart';
+import 'package:hatssue/shared/button/button_size.dart';
+import 'package:hatssue/shared/button/button_type.dart';
 import 'package:hatssue/theme/foundation/app_theme.dart';
 
 class NewChallengePage extends StatelessWidget {
@@ -20,13 +23,35 @@ class NewChallengePage extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
-            title: const Text('새로운 챌린지 만들기'),
-            backgroundColor: Colors.black,
+            backgroundColor: theme.color.surface,
           ),
           body: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 20,
+              vertical: 30,
+            ),
             child: Column(
               children: [
+                Text(
+                  '새로운 챌린지 만들기',
+                  style: theme.typo.headline4.copyWith(
+                    color: theme.color.text,
+                    fontWeight: theme.typo.bold,
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  '시작할 챌린지 제목을 입력해주세요',
+                  style: theme.typo.body1.copyWith(
+                    color: theme.color.subtext,
+                    fontWeight: theme.typo.regular,
+                  ),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
                 const TextField(
                   decoration: InputDecoration(
                     labelText: '챌린지 제목을 입력해주세요',
@@ -55,17 +80,22 @@ class NewChallengePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: () {
-                    context.go('/newChallengeNotificationPage');
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.amber,
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 15, horizontal: 100),
-                  ),
-                  child: const Text('다음', style: TextStyle(fontSize: 18)),
-                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Button(
+                        onPressed: () {
+                          context.go('/newChallengeNotificationPage');
+                        },
+                        size: ButtonSize.medium,
+                        type: ButtonType.fill,
+                        color: theme.color.onPrimary,
+                        backgroundColor: theme.color.primary,
+                        text: '다음',
+                      ),
+                    ),
+                  ],
+                )
               ],
             ),
           ),
