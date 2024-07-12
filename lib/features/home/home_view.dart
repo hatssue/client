@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:hatssue/service/theme_service.dart';
+import 'package:hatssue/service/theme/theme_service.dart';
 
 class Home extends StatelessWidget {
   const Home({
@@ -26,10 +26,7 @@ class Home extends StatelessWidget {
             actions: [
               IconButton(
                 onPressed: () {
-                  ref.read(themeNotifierProvider.notifier).toggleTheme();
-
-                  /// 테마 변경
-                  // ref.read(themeProvider.notifier).toggleTheme();
+                  ref.read(themeServiceProvider.notifier).toggleTheme();
                 },
                 icon: const Icon(
                   Icons.settings,
@@ -46,13 +43,19 @@ class Home extends StatelessWidget {
                 onPressed: () {
                   context.go('/calendarSample');
                 },
-                child: const Text("캘린더 샘플 화면으로 이동"),
+                child: const Text("캘린더 샘플"),
               ),
               ElevatedButton(
                 onPressed: () {
                   context.go('/calendarView');
                 },
-                child: const Text("날짜 선택 화면으로 이동"),
+                child: const Text("날짜 선택"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  context.go('/challengeView');
+                },
+                child: const Text("챌린지 생성"),
               ),
             ],
           )),

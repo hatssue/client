@@ -31,5 +31,9 @@ class CustomRouter {
       path: "/myHomePage",
       builder: (context, state) => const Home(title: "제목"),
     ),
+    GoRoute(
+      path: "/challengeView",
+      builder: (context, state) => const NewChallengePage(),
+    )
   ]);
 }

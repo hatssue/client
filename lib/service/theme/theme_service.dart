@@ -6,7 +6,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'theme_service.g.dart';
 
 @riverpod
-class ThemeNotifier extends _$ThemeNotifier {
+class ThemeService extends _$ThemeService {
   @override
   AppTheme build() => DarkTheme();
 
