@@ -32,6 +32,7 @@ class NewChallengePage extends StatelessWidget {
             ),
             child: Column(
               children: [
+                /// Title
                 Text(
                   '새로운 챌린지 만들기',
                   style: theme.typo.headline4.copyWith(
@@ -42,6 +43,8 @@ class NewChallengePage extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
+
+                /// Sub Title
                 Text(
                   '시작할 챌린지 제목을 입력해주세요',
                   style: theme.typo.body1.copyWith(
@@ -52,21 +55,52 @@ class NewChallengePage extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
+
+                /// TextField
                 const TextField(
                   decoration: InputDecoration(
                     labelText: '챌린지 제목을 입력해주세요',
                     border: OutlineInputBorder(),
                   ),
                 ),
-                const SizedBox(height: 20),
-                const Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    '많이하는 챌린지를 추천해드려요',
-                    style: TextStyle(fontSize: 16),
-                  ),
+                const SizedBox(
+                  height: 30,
                 ),
-                const SizedBox(height: 20),
+
+                /// Select List Title
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 1,
+                        color: theme.color.subtext,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 15,
+                      ),
+                      child: Text(
+                        '많이하는 챌린지를 추천해드려요',
+                        style: theme.typo.body2.copyWith(
+                          color: theme.color.subtext,
+                          fontWeight: theme.typo.regular,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 1,
+                        color: theme.color.subtext,
+                      ),
+                    ),
+                  ],
+                ),
+
+                const SizedBox(height: 30),
+
+                /// Select List
                 Expanded(
                   child: ListView(
                     children: const [
@@ -112,21 +146,20 @@ class ChallengeButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: ElevatedButton(
-        onPressed: () {
-          // 챌린지 버튼의 동작 추가
-        },
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.grey[850],
-          padding: const EdgeInsets.symmetric(vertical: 15),
-        ),
-        child: Text(
-          title,
-          style: const TextStyle(fontSize: 18),
-        ),
-      ),
+    return Consumer(
+      builder: (context, ref, child) {
+        final AppTheme theme = ref.watch(themeServiceProvider);
+        return Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          child: Button(
+            onPressed: () {},
+            color: theme.color.onSecondary,
+            backgroundColor: theme.color.secondary,
+            text: title,
+            size: ButtonSize.small,
+          ),
+        );
+      },
     );
   }
 }

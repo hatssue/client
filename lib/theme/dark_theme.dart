@@ -20,8 +20,8 @@ class DarkTheme implements AppTheme {
     // onInactiveContainer: onInactiveContainer,
     primary: Palette.primary01,
     onPrimary: Palette.primary02,
-    // secondary: secondary,
-    // onSecondary: onSecondary,
+    secondary: Palette.grey10,
+    onSecondary: Palette.grey01,
     // tertiary: tertiary,
     // onTertiary: onTertiary,
   );
