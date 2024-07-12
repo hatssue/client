@@ -1,10 +1,9 @@
 import 'package:go_router/go_router.dart';
-
-import 'package:hatssue/src/home/home_view.dart';
-import 'package:hatssue/src/calendar/calendar_view.dart';
-import 'package:hatssue/src/samples/calendar_sample_view.dart';
-import 'package:hatssue/src/challenge/new_challenge_page.dart';
-import 'package:hatssue/src/challenge/new_challenge_notification_page.dart';
+import 'package:hatssue/features/calendar/calendar_view.dart';
+import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_notification_page.dart';
+import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_page.dart';
+import 'package:hatssue/features/home/home_view.dart';
+import 'package:hatssue/features/samples/calendar_sample_view.dart';
 
 class CustomRouter {
   static GoRouter router = GoRouter(routes: [
