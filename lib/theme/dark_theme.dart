@@ -9,7 +9,7 @@ class DarkTheme implements AppTheme {
     surface: Palette.primary02,
     // background: background,
     text: Palette.grey01,
-    subtext: Palette.primary02,
+    subtext: Palette.grey04, // 임시
     // toastContainer: toastContainer,
     // onToastContainer: onToastContainer,
     // hint: hint,
@@ -20,8 +20,8 @@ class DarkTheme implements AppTheme {
     // onInactiveContainer: onInactiveContainer,
     primary: Palette.primary01,
     onPrimary: Palette.primary02,
-    // secondary: secondary,
-    // onSecondary: onSecondary,
+    secondary: Palette.grey10,
+    onSecondary: Palette.grey01,
     // tertiary: tertiary,
     // onTertiary: onTertiary,
   );

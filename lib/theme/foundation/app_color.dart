@@ -18,8 +18,8 @@ class AppColor {
     // required this.onInactiveContainer,
     required this.primary,
     required this.onPrimary,
-    // required this.secondary,
-    // required this.onSecondary,
+    required this.secondary,
+    required this.onSecondary,
     // required this.tertiary,
     // required this.onTertiary,
   });
@@ -49,8 +49,8 @@ class AppColor {
   /// Accent
   final Color primary;
   final Color onPrimary;
-  // final Color secondary;
-  // final Color onSecondary;
+  final Color secondary;
+  final Color onSecondary;
   // final Color tertiary;
   // final Color onTertiary;
 }

@@ -13,6 +13,12 @@ class AppTypo {
   /// Font Color
   final Color fontColor;
 
+  /// Font Weight
+  late FontWeight light = typo.light;
+  late FontWeight regular = typo.regular;
+  late FontWeight medium = typo.medium;
+  late FontWeight bold = typo.bold;
+
   /// Headline
   late final TextStyle headline1 = TextStyle(
     height: 1.3,
