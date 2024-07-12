@@ -1,16 +1,15 @@
 import 'package:go_router/go_router.dart';
-
-import 'package:hatssue/src/home/my_home_page_view.dart';
-import 'package:hatssue/src/calendar/calendar_view.dart';
-import 'package:hatssue/src/samples/calendar_sample_view.dart';
-import 'package:hatssue/src/challenge/new_challenge_page.dart';
-import 'package:hatssue/src/challenge/new_challenge_notification_page.dart';
+import 'package:hatssue/features/calendar/calendar_view.dart';
+import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_notification_page.dart';
+import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_page.dart';
+import 'package:hatssue/features/home/home_view.dart';
+import 'package:hatssue/features/samples/calendar_sample_view.dart';
 
 class CustomRouter {
   static GoRouter router = GoRouter(routes: [
     GoRoute(
       path: "/",
-      builder: (context, state) => const MyHomePage(title: "제목"),
+      builder: (context, state) => const Home(title: "home"),
     ),
     GoRoute(
       path: "/calendarView",
@@ -30,7 +29,7 @@ class CustomRouter {
     ),
     GoRoute(
       path: "/myHomePage",
-      builder: (context, state) => const MyHomePage(title: "제목"),
+      builder: (context, state) => const Home(title: "제목"),
     ),
   ]);
 }
