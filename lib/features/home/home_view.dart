@@ -25,9 +25,7 @@ class Home extends StatelessWidget {
             ),
             actions: [
               IconButton(
-                onPressed: () {
-                  ref.read(themeServiceProvider.notifier).toggleTheme();
-                },
+                onPressed: ref.read(themeServiceProvider.notifier).toggleTheme,
                 icon: const Icon(
                   Icons.settings,
                   size: 20,
