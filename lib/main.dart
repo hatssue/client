@@ -5,11 +5,24 @@ import 'package:hatssue/service/theme/theme_service.dart';
 import 'utils/custom_router.dart';
 
 void main() {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await initializeDateFormatting('ko_KR', null);
+  // initializeDateFormatting('ko_KR', '').then(
+  // (_) =>
   runApp(
     const ProviderScope(
       child: MyApp(),
     ),
   );
+
+  // initializeDateFormatting('ko_KR', '').then(
+  //   (_) async => runApp(
+  //     const ProviderScope(
+  //       child: MyApp(),
+  //     ),
+  //   ),
+  // );
+  // );
 }
 
 class MyApp extends ConsumerWidget {

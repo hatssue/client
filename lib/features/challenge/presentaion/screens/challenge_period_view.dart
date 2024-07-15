@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hatssue/service/theme/theme_service.dart';
+import 'package:hatssue/utils/intl_helper.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 // class 멤버 변수로 선언되면 안됨.. 왜지 ..
@@ -51,6 +52,8 @@ class _ChallengePeriodViewState extends ConsumerState<ChallengePeriodView> {
               color: Colors.white,
               // color: ref.color.tertiary,
               child: TableCalendar(
+                // locale: 'ko_KR',
+                // locale: LangType.ko.lang,
                 focusedDay: _focusedDay,
 
                 /// firstDay : first avaliable day  for the calendar
