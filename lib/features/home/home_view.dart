@@ -45,9 +45,9 @@ class Home extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  context.go('/calendarView');
+                  context.go('/challengePeriodView');
                 },
-                child: const Text("날짜 선택"),
+                child: const Text("챌린지 기간"),
               ),
               ElevatedButton(
                 onPressed: () {

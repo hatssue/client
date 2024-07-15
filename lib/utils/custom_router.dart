@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:hatssue/features/calendar/calendar_view.dart';
+import 'package:hatssue/features/challenge/presentaion/screens/challenge_period_view.dart';
 import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_notification_page.dart';
 import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_page.dart';
 import 'package:hatssue/features/home/home_view.dart';
@@ -34,6 +35,10 @@ class CustomRouter {
     GoRoute(
       path: "/challengeView",
       builder: (context, state) => const NewChallengePage(),
+    ),
+    GoRoute(
+      path: '/challengePeriodView',
+      builder: (context, state) => const ChallengePeriodView(),
     )
   ]);
 }

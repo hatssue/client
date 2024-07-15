@@ -18,12 +18,13 @@ class LightTheme implements AppTheme {
     // inactive: inactive,
     // inactiveContainer: inactiveContainer,
     // onInactiveContainer: onInactiveContainer,
+    /// dark mode와 동일 (임시)
     primary: Palette.primary01,
     onPrimary: Palette.primary02,
     secondary: Palette.grey10,
     onSecondary: Palette.grey01,
-    // tertiary: tertiary,
-    // onTertiary: onTertiary,
+    tertiary: Palette.grey09,
+    onTertiary: Palette.blue01,
   );
 
   @override
