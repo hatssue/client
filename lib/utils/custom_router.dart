@@ -4,6 +4,7 @@ import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_not
 import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_page.dart';
 import 'package:hatssue/features/home/home_view.dart';
 import 'package:hatssue/features/samples/calendar_sample_view.dart';
+import 'package:hatssue/features/samples/component_sample_view.dart';
 
 class CustomRouter {
   static GoRouter router = GoRouter(routes: [
@@ -34,6 +35,10 @@ class CustomRouter {
     GoRoute(
       path: "/challengeView",
       builder: (context, state) => const NewChallengePage(),
+    ),
+    GoRoute(
+      path: "/componentSampleView",
+      builder: (context, state) => const ComponentSampleView(),
     )
   ]);
 }
