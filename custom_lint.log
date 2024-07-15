@@ -43,3 +43,697 @@ at:
 #6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
 <asynchronous suspension>
 
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/go_router-13.2.5/lib/src/misc/extensions.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/go_router-13.2.5/lib/src/misc/extensions.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/go_router-13.2.5/lib/src/misc/extensions.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/go_router-13.2.5/lib/src/misc/extensions.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/go_router-13.2.5/lib/src/misc/extensions.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/go_router-13.2.5/lib/src/misc/extensions.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/go_router-13.2.5/lib/src/misc/extensions.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/go_router-13.2.5/lib/src/misc/extensions.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/go_router-13.2.5/lib/src/misc/extensions.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+[custom_lint] 2024-07-15T21:38:49.073783 Bad state: No response for request CustomLintRequest.analyzerPluginRequest(request: Instance of 'Request', id: 38)
+[custom_lint] 2024-07-15T21:38:49.073783 #0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:253:21)
+[custom_lint] 2024-07-15T21:38:49.073783 #1      _runUserCode (dart:async/stream_pipe.dart:11:23)
+[custom_lint] 2024-07-15T21:38:49.073783 #2      Stream.firstWhere.<anonymous closure> (dart:async/stream.dart:1708:9)
+[custom_lint] 2024-07-15T21:38:49.073783 #3      _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.073783 #4      _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #5      _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #6      _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #7      _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #8      _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #9      _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.073783 #10     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #11     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.073783 #12     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #13     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #14     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #15     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #16     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #17     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.073783 #18     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #19     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.073783 #20     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #21     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #22     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #23     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #24     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #25     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.073783 #26     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #27     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.073783 #28     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #29     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #30     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #31     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #32     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #33     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.073783 #34     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #35     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.073783 #36     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #37     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #38     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #39     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #40     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #41     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.073783 #42     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #43     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.073783 #44     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #45     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #46     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #47     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #48     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #49     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.073783 #50     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #51     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.073783 #52     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #53     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #54     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #55     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #56     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #57     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.073783 #58     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #59     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.073783 #60     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #61     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #62     _DoneStreamSubscription._onMicrotask (dart:async/stream_impl.dart:777:15)
+[custom_lint] 2024-07-15T21:38:49.073783 #63     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.073783 #64     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #65     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #66     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[custom_lint] 2024-07-15T21:38:49.073783 #67     _rootRun (dart:async/zone.dart:1399:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #68     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.073783 #69     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.073783 #70     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[custom_lint] 2024-07-15T21:38:49.073783 #71     _microtaskLoop (dart:async/schedule_microtask.dart:40:21)
+[custom_lint] 2024-07-15T21:38:49.073783 #72     _startMicrotaskLoop (dart:async/schedule_microtask.dart:49:5)
+[custom_lint] 2024-07-15T21:38:49.073783 #73     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+[custom_lint] 2024-07-15T21:38:49.073783 #74     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:185:5)
+[custom_lint] 2024-07-15T21:38:49.073783
+The request analysis.setPriorityFiles failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+Bad state: No response for request CustomLintRequest.analyzerPluginRequest(request: Instance of 'Request', id: 38)
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:253:21)
+#1      _runUserCode (dart:async/stream_pipe.dart:11:23)
+#2      Stream.firstWhere.<anonymous closure> (dart:async/stream.dart:1708:9)
+#3      _rootRun (dart:async/zone.dart:1391:47)
+#4      _CustomZone.run (dart:async/zone.dart:1301:19)
+#5      _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#6      _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#7      _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#8      _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#9      _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#10     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#11     _rootRun (dart:async/zone.dart:1391:47)
+#12     _CustomZone.run (dart:async/zone.dart:1301:19)
+#13     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#14     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#15     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#16     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#17     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#18     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#19     _rootRun (dart:async/zone.dart:1391:47)
+#20     _CustomZone.run (dart:async/zone.dart:1301:19)
+#21     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#22     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#23     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#24     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#25     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#26     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#27     _rootRun (dart:async/zone.dart:1391:47)
+#28     _CustomZone.run (dart:async/zone.dart:1301:19)
+#29     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#30     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#31     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#32     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#33     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#34     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#35     _rootRun (dart:async/zone.dart:1391:47)
+#36     _CustomZone.run (dart:async/zone.dart:1301:19)
+#37     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#38     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#39     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#40     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#41     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#42     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#43     _rootRun (dart:async/zone.dart:1391:47)
+#44     _CustomZone.run (dart:async/zone.dart:1301:19)
+#45     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#46     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#47     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#48     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#49     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#50     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#51     _rootRun (dart:async/zone.dart:1391:47)
+#52     _CustomZone.run (dart:async/zone.dart:1301:19)
+#53     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#54     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#55     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#56     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#57     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#58     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#59     _rootRun (dart:async/zone.dart:1391:47)
+#60     _CustomZone.run (dart:async/zone.dart:1301:19)
+#61     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#62     _DoneStreamSubscription._onMicrotask (dart:async/stream_impl.dart:777:15)
+#63     _rootRun (dart:async/zone.dart:1391:47)
+#64     _CustomZone.run (dart:async/zone.dart:1301:19)
+#65     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#66     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+#67     _rootRun (dart:async/zone.dart:1399:13)
+#68     _CustomZone.run (dart:async/zone.dart:1301:19)
+#69     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#70     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+#71     _microtaskLoop (dart:async/schedule_microtask.dart:40:21)
+#72     _startMicrotaskLoop (dart:async/schedule_microtask.dart:49:5)
+#73     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#74     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:185:5)
+
+[custom_lint] 2024-07-15T21:38:49.089479 Bad state: No response for request CustomLintRequest.analyzerPluginRequest(request: Instance of 'Request', id: 39)
+[custom_lint] 2024-07-15T21:38:49.089479 #0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:253:21)
+[custom_lint] 2024-07-15T21:38:49.089479 #1      _runUserCode (dart:async/stream_pipe.dart:11:23)
+[custom_lint] 2024-07-15T21:38:49.089479 #2      Stream.firstWhere.<anonymous closure> (dart:async/stream.dart:1708:9)
+[custom_lint] 2024-07-15T21:38:49.089479 #3      _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.089479 #4      _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #5      _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #6      _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #7      _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #8      _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #9      _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.089479 #10     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #11     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.089479 #12     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #13     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #14     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #15     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #16     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #17     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.089479 #18     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #19     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.089479 #20     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #21     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #22     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #23     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #24     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #25     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.089479 #26     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #27     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.089479 #28     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #29     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #30     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #31     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #32     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #33     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.089479 #34     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #35     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.089479 #36     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #37     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #38     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #39     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #40     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #41     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.089479 #42     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #43     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.089479 #44     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #45     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #46     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #47     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #48     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #49     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.089479 #50     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #51     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.089479 #52     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #53     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #54     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #55     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #56     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #57     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+[custom_lint] 2024-07-15T21:38:49.089479 #58     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #59     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.089479 #60     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #61     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #62     _DoneStreamSubscription._onMicrotask (dart:async/stream_impl.dart:777:15)
+[custom_lint] 2024-07-15T21:38:49.089479 #63     _rootRun (dart:async/zone.dart:1391:47)
+[custom_lint] 2024-07-15T21:38:49.089479 #64     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #65     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #66     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[custom_lint] 2024-07-15T21:38:49.089479 #67     _rootRun (dart:async/zone.dart:1399:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #68     _CustomZone.run (dart:async/zone.dart:1301:19)
+[custom_lint] 2024-07-15T21:38:49.089479 #69     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+[custom_lint] 2024-07-15T21:38:49.089479 #70     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+[custom_lint] 2024-07-15T21:38:49.089479 #71     _microtaskLoop (dart:async/schedule_microtask.dart:40:21)
+[custom_lint] 2024-07-15T21:38:49.089479 #72     _startMicrotaskLoop (dart:async/schedule_microtask.dart:49:5)
+[custom_lint] 2024-07-15T21:38:49.089479 #73     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+[custom_lint] 2024-07-15T21:38:49.089479 #74     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:185:5)
+[custom_lint] 2024-07-15T21:38:49.089479
+The request analysis.setSubscriptions failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+Bad state: No response for request CustomLintRequest.analyzerPluginRequest(request: Instance of 'Request', id: 39)
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:253:21)
+#1      _runUserCode (dart:async/stream_pipe.dart:11:23)
+#2      Stream.firstWhere.<anonymous closure> (dart:async/stream.dart:1708:9)
+#3      _rootRun (dart:async/zone.dart:1391:47)
+#4      _CustomZone.run (dart:async/zone.dart:1301:19)
+#5      _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#6      _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#7      _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#8      _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#9      _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#10     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#11     _rootRun (dart:async/zone.dart:1391:47)
+#12     _CustomZone.run (dart:async/zone.dart:1301:19)
+#13     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#14     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#15     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#16     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#17     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#18     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#19     _rootRun (dart:async/zone.dart:1391:47)
+#20     _CustomZone.run (dart:async/zone.dart:1301:19)
+#21     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#22     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#23     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#24     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#25     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#26     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#27     _rootRun (dart:async/zone.dart:1391:47)
+#28     _CustomZone.run (dart:async/zone.dart:1301:19)
+#29     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#30     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#31     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#32     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#33     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#34     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#35     _rootRun (dart:async/zone.dart:1391:47)
+#36     _CustomZone.run (dart:async/zone.dart:1301:19)
+#37     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#38     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#39     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#40     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#41     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#42     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#43     _rootRun (dart:async/zone.dart:1391:47)
+#44     _CustomZone.run (dart:async/zone.dart:1301:19)
+#45     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#46     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#47     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#48     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#49     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#50     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#51     _rootRun (dart:async/zone.dart:1391:47)
+#52     _CustomZone.run (dart:async/zone.dart:1301:19)
+#53     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#54     _BufferingStreamSubscription._sendDone.sendDone (dart:async/stream_impl.dart:418:13)
+#55     _BufferingStreamSubscription._sendDone (dart:async/stream_impl.dart:428:7)
+#56     _BufferingStreamSubscription._close (dart:async/stream_impl.dart:317:7)
+#57     _ForwardingStream._handleDone (dart:async/stream_pipe.dart:99:10)
+#58     _ForwardingStreamSubscription._handleDone (dart:async/stream_pipe.dart:161:13)
+#59     _rootRun (dart:async/zone.dart:1391:47)
+#60     _CustomZone.run (dart:async/zone.dart:1301:19)
+#61     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#62     _DoneStreamSubscription._onMicrotask (dart:async/stream_impl.dart:777:15)
+#63     _rootRun (dart:async/zone.dart:1391:47)
+#64     _CustomZone.run (dart:async/zone.dart:1301:19)
+#65     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#66     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+#67     _rootRun (dart:async/zone.dart:1399:13)
+#68     _CustomZone.run (dart:async/zone.dart:1301:19)
+#69     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#70     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+#71     _microtaskLoop (dart:async/schedule_microtask.dart:40:21)
+#72     _startMicrotaskLoop (dart:async/schedule_microtask.dart:49:5)
+#73     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:118:13)
+#74     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:185:5)
+
+[custom_lint] 2024-07-15T21:38:49.092837 SocketException: Write failed (OS Error: Broken pipe, errno = 32), address = ::1, port = 61744
+[custom_lint] 2024-07-15T21:38:49.092837 #0      _NativeSocket.write (dart:io-patch/socket_patch.dart:1246:34)
+[custom_lint] 2024-07-15T21:38:49.092837 #1      _RawSocket.write (dart:io-patch/socket_patch.dart:2004:15)
+[custom_lint] 2024-07-15T21:38:49.092837 #2      _Socket._write (dart:io-patch/socket_patch.dart:2481:18)
+[custom_lint] 2024-07-15T21:38:49.092837 #3      _SocketStreamConsumer.write (dart:io-patch/socket_patch.dart:2216:28)
+[custom_lint] 2024-07-15T21:38:49.092837 #4      _SocketStreamConsumer.addStream.<anonymous closure> (dart:io-patch/socket_patch.dart:2168:11)
+[custom_lint] 2024-07-15T21:38:49.092837 #5      _rootRunUnary (dart:async/zone.dart:1407:47)
+[custom_lint] 2024-07-15T21:38:49.092837 #6      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+[custom_lint] 2024-07-15T21:38:49.092837 #7      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+[custom_lint] 2024-07-15T21:38:49.092837 #8      _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+[custom_lint] 2024-07-15T21:38:49.092837 #9      _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+[custom_lint] 2024-07-15T21:38:49.092837 #10     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+[custom_lint] 2024-07-15T21:38:49.092837 #11     _StreamController._add (dart:async/stream_controller.dart:658:7)
+[custom_lint] 2024-07-15T21:38:49.092837 #12     _StreamController.add (dart:async/stream_controller.dart:606:5)
+[custom_lint] 2024-07-15T21:38:49.092837 #13     _StreamSinkImpl.add (dart:io/io_sink.dart:154:17)
+[custom_lint] 2024-07-15T21:38:49.092837 #14     _Socket.add (dart:io-patch/socket_patch.dart:2323:38)
+[custom_lint] 2024-07-15T21:38:49.092837 #15     JsonSocketChannel._sendWithLength (package:custom_lint/src/channels.dart:94:12)
+[custom_lint] 2024-07-15T21:38:49.092837 #16     JsonSocketChannel.sendJson (package:custom_lint/src/channels.dart:144:5)
+[custom_lint] 2024-07-15T21:38:49.092837 <asynchronous suspension>
+[custom_lint] 2024-07-15T21:38:49.092837 #17     SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:258:5)
+[custom_lint] 2024-07-15T21:38:49.092837 <asynchronous suspension>
+[custom_lint] 2024-07-15T21:38:49.092837 #18     SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+[custom_lint] 2024-07-15T21:38:49.092837 <asynchronous suspension>
+[custom_lint] 2024-07-15T21:38:49.092837 #19     CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+[custom_lint] 2024-07-15T21:38:49.092837 <asynchronous suspension>
+[custom_lint] 2024-07-15T21:38:49.092837 #20     PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+[custom_lint] 2024-07-15T21:38:49.092837 <asynchronous suspension>
+[custom_lint] 2024-07-15T21:38:49.092837 #21     CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+[custom_lint] 2024-07-15T21:38:49.092837 <asynchronous suspension>
+[custom_lint] 2024-07-15T21:38:49.092837
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /opt/homebrew/Caskroom/flutter/3.19.6/flutter/packages/flutter/lib/src/widgets/navigator.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/flutter_riverpod-2.5.1/lib/src/consumer.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/flutter_riverpod-2.5.1/lib/src/consumer.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /Users/jeongwan-kim/.pub-cache/hosted/pub.dev/flutter_riverpod-2.5.1/lib/src/consumer.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
+The request edit.getAssists failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+A request threw the exception:Bad state: Unable to find the context to /opt/homebrew/Caskroom/flutter/3.19.6/flutter/packages/flutter/lib/src/material/color_scheme.dart
+#0      AnalysisContextCollectionImpl.contextFor (package:analyzer/src/dart/analysis/analysis_context_collection.dart:151:5)
+#1      _ClientAnalyzerPlugin.handleEditGetAssists (package:custom_lint_builder/src/client.dart:453:47)
+<asynchronous suspension>
+#2      ServerPlugin._getResponse (package:analyzer_plugin/plugin/plugin.dart:556:18)
+<asynchronous suspension>
+#3      ServerPlugin._onRequest (package:analyzer_plugin/plugin/plugin.dart:599:18)
+<asynchronous suspension>
+
+at:
+#0      SocketCustomLintServerToClientChannel.sendCustomLintRequest.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:268:11)
+#1      _$CustomLintResponseAnalyzerPluginResponseImpl.map (package:custom_lint/src/v2/protocol.freezed.dart:928:34)
+#2      SocketCustomLintServerToClientChannel.sendCustomLintRequest (package:custom_lint/src/v2/server_to_client_channel.dart:262:14)
+<asynchronous suspension>
+#3      SocketCustomLintServerToClientChannel.sendAnalyzerPluginRequest (package:custom_lint/src/v2/server_to_client_channel.dart:234:22)
+<asynchronous suspension>
+#4      CustomLintServer._handleRequest.<anonymous closure>.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:188:17)
+<asynchronous suspension>
+#5      PendingOperation.run (package:custom_lint/src/async_operation.dart:22:14)
+<asynchronous suspension>
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:171:22)
+<asynchronous suspension>
+
