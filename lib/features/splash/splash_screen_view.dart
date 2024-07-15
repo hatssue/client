@@ -3,14 +3,14 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+class SplashScreenView extends StatefulWidget {
+  const SplashScreenView({super.key});
 
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  _SplashScreenViewState createState() => _SplashScreenViewState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenViewState extends State<SplashScreenView> {
   @override
   void initState() {
     // TODO: implement initState
@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
           image: DecorationImage(
             // 임시로 런치 스크린 이미지를 피그마에 있는 것으로 사용했으나, 추후에 수정 필요
             image: AssetImage(
-                'assets/splash_screen/launch_screen_image.png'), // 로컬 이미지 경로
+                'assets/images/splash_screen/launch_screen_image.png'), // 로컬 이미지 경로
             fit: BoxFit.cover,
           ),
         ),

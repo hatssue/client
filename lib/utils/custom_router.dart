@@ -5,12 +5,17 @@ import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_not
 import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_page.dart';
 import 'package:hatssue/features/home/home_view.dart';
 import 'package:hatssue/features/samples/calendar_sample_view.dart';
+import 'package:hatssue/features/splash/splash_screen_view.dart';
 
 class CustomRouter {
   static GoRouter router = GoRouter(routes: [
+    // GoRoute(
+    //   path: "/",
+    //   builder: (context, state) => const Home(title: "home"),
+    // ),
     GoRoute(
       path: "/",
-      builder: (context, state) => const Home(title: "home"),
+      builder: (context, state) => const SplashScreenView(),
     ),
     GoRoute(
       path: "/calendarView",
