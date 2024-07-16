@@ -79,7 +79,7 @@ class _ButtonState extends ConsumerState<Button> {
           color: backgroundColor,
           borderRadius: BorderRadius.circular(10),
         ),
-        padding: const EdgeInsets.all(18),
+        padding: EdgeInsets.all(widget.size.padding),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,

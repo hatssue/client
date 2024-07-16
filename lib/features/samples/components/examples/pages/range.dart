@@ -7,6 +7,8 @@ import 'package:table_calendar/table_calendar.dart';
 import '../utils.dart';
 
 class TableRangeExample extends StatefulWidget {
+  const TableRangeExample({super.key});
+
   @override
   _TableRangeExampleState createState() => _TableRangeExampleState();
 }
@@ -24,19 +26,23 @@ class _TableRangeExampleState extends State<TableRangeExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TableCalendar - Range'),
+        title: const Text('TableCalendar - Range'),
       ),
       body: TableCalendar(
         firstDay: kFirstDay,
         lastDay: kLastDay,
         focusedDay: _focusedDay,
-        selectedDayPredicate: (day) => isSameDay(_selectedDay, day),
+        selectedDayPredicate: (day) {
+          // print('selectedDayPredicate : $day');
+          return isSameDay(_selectedDay, day);
+        },
         rangeStartDay: _rangeStart,
         rangeEndDay: _rangeEnd,
         calendarFormat: _calendarFormat,
         rangeSelectionMode: _rangeSelectionMode,
         onDaySelected: (selectedDay, focusedDay) {
           if (!isSameDay(_selectedDay, selectedDay)) {
+            print('onDaySelected : $selectedDay / $focusedDay');
             setState(() {
               _selectedDay = selectedDay;
               _focusedDay = focusedDay;
@@ -47,6 +53,7 @@ class _TableRangeExampleState extends State<TableRangeExample> {
           }
         },
         onRangeSelected: (start, end, focusedDay) {
+          print('onRangeSelected : $start / $end / $focusedDay');
           setState(() {
             _selectedDay = null;
             _focusedDay = focusedDay;
@@ -56,6 +63,7 @@ class _TableRangeExampleState extends State<TableRangeExample> {
           });
         },
         onFormatChanged: (format) {
+          print('onFormatChanged : $format');
           if (_calendarFormat != format) {
             setState(() {
               _calendarFormat = format;

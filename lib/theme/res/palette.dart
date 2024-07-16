@@ -17,4 +17,9 @@ abstract class Palette {
   static Color grey08 = const Color(0xFF363D44);
   static Color grey09 = const Color(0xFF2C353F);
   static Color grey10 = const Color(0xFF2A3139);
+
+  static Color blue01 = const Color(0xFF729BD1);
+  // static Color grey11 = const Color(0x000000B3);
+
+  static Color white = const Color(0xFFFFFFFF);
 }
