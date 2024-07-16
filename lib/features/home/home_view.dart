@@ -55,6 +55,12 @@ class Home extends StatelessWidget {
                 },
                 child: const Text("챌린지 생성"),
               ),
+              ElevatedButton(
+                onPressed: () {
+                  context.go('/componentSampleView');
+                },
+                child: const Text("컴포넌트 샘플"),
+              ),
             ],
           )),
         );
