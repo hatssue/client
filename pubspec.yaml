@@ -101,8 +101,11 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
   assets:
+    - assets/fonts/
     - assets/images/
+    - assets/images/splash_screen/
   fonts:
     - family: noto_sans_kr
       fonts:
