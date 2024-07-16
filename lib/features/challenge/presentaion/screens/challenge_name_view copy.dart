@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -7,8 +8,8 @@ import 'package:hatssue/shared/button/button_size.dart';
 import 'package:hatssue/shared/button/button_type.dart';
 import 'package:hatssue/theme/foundation/app_theme.dart';
 
-class NewChallengePage extends StatelessWidget {
-  const NewChallengePage({super.key});
+class ChallengeNameView extends StatelessWidget {
+  const ChallengeNameView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class NewChallengePage extends StatelessWidget {
             leading: IconButton(
               icon: const Icon(Icons.arrow_back),
               onPressed: () {
-                Navigator.pop(context);
+                context.go('/');
               },
             ),
             backgroundColor: theme.color.surface,
@@ -101,17 +102,8 @@ class NewChallengePage extends StatelessWidget {
                 const SizedBox(height: 30),
 
                 /// Select List
-                Expanded(
-                  child: ListView(
-                    children: const [
-                      ChallengeButton('🧘 스트레칭 🧘'),
-                      ChallengeButton('✏️ 일기쓰기 ✏️'),
-                      ChallengeButton('🚶 산책하기 🚶'),
-                      ChallengeButton('📘 영어공부 📘'),
-                      ChallengeButton('🌸 일찍 일어나기 🌸'),
-                      ChallengeButton('🥛 물 마시기 🥛'),
-                    ],
-                  ),
+                const Expanded(
+                  child: DefaultChallengeListView(),
                 ),
                 const SizedBox(height: 20),
                 Row(
@@ -139,10 +131,62 @@ class NewChallengePage extends StatelessWidget {
   }
 }
 
+class DefaultChallengeListView extends StatelessWidget {
+  const DefaultChallengeListView({super.key});
+
+  void onPressed(String title) {
+    print(title);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        ChallengeButton(
+          title: '🧘 스트레칭 🧘',
+          // index: 0,
+          onPressed: onPressed,
+        ),
+        ChallengeButton(
+          title: '✏️ 일기쓰기 ✏️',
+          // index: 1,
+          onPressed: onPressed,
+        ),
+        ChallengeButton(
+          title: '🚶 산책하기 🚶',
+          // index: 2,
+          onPressed: onPressed,
+        ),
+        ChallengeButton(
+          title: '📘 영어공부 📘',
+          // index: 3,
+          onPressed: onPressed,
+        ),
+        ChallengeButton(
+          title: '🌸 일찍 일어나기 🌸',
+          // index: 4,
+          onPressed: onPressed,
+        ),
+        ChallengeButton(
+          title: '🥛 물 마시기 🥛',
+          // index: 5,
+          onPressed: onPressed,
+        ),
+      ],
+    );
+  }
+}
+
 class ChallengeButton extends StatelessWidget {
   final String title;
 
-  const ChallengeButton(this.title, {super.key});
+  final Function(String title) onPressed;
+
+  const ChallengeButton({
+    super.key,
+    required this.title,
+    required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -152,7 +196,9 @@ class ChallengeButton extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: Button(
-            onPressed: () {},
+            onPressed: () {
+              onPressed(title);
+            },
             color: theme.color.onSecondary,
             backgroundColor: theme.color.secondary,
             text: title,
