@@ -82,6 +82,7 @@ class SettingView extends StatelessWidget {
   }
 }
 
+// 얘네는 어디로 가야하오 1..
 // StateNotifier 정의
 class BottomNavigationState extends StateNotifier<int> {
   BottomNavigationState() : super(0);
@@ -91,6 +92,7 @@ class BottomNavigationState extends StateNotifier<int> {
   }
 }
 
+// 얘네는 어디로 가야하오 2..
 // StateNotifierProvider 정의
 final bottomNavigationProvider = StateNotifierProvider<BottomNavigationState, int>((ref) {
   return BottomNavigationState();
