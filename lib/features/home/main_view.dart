@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hatssue/service/theme/theme_service.dart';
@@ -32,7 +34,7 @@ class MainView extends ConsumerWidget {
         items: [
           BottomNavigationBarItem(
               icon: _buildIcon('assets/images/icons/home.png', 'assets/images/icons/home_selected.png', 0, selectedIndex),
-              label: '홈'
+              label: '홈',
           ),
           BottomNavigationBarItem(
               icon: _buildIcon('assets/images/icons/memo.png', 'assets/images/icons/memo_selected.png', 1, selectedIndex),
@@ -47,6 +49,10 @@ class MainView extends ConsumerWidget {
         selectedItemColor: Color(0xFFADD8FB),
         unselectedItemColor: Color(0xFF9E9E9E),
         backgroundColor: ref.theme.color.surface,
+
+        // 폰트 적용이 안됨
+        selectedLabelStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
+        unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
         onTap: (index) {
           bottomNavigationNotifier.selectTab(index);
         },
