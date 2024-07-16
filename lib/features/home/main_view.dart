@@ -13,9 +13,9 @@ class _MainViewState extends State<MainView> {
   int _selectedIndex = 0;
 
   static List<Widget> _widgetOptions = <Widget>[
-    homeView(),
-    pastRecordView(),
-    settingView()
+    HomeView(),
+    PastRecordView(),
+    SettingView()
   ];
 
   void _onItemTapped(int index) {
@@ -54,7 +54,7 @@ class _MainViewState extends State<MainView> {
   }
 }
 
-class homeView extends StatelessWidget {
+class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -66,7 +66,7 @@ class homeView extends StatelessWidget {
   }
 }
 
-class pastRecordView extends StatelessWidget {
+class PastRecordView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -78,7 +78,7 @@ class pastRecordView extends StatelessWidget {
   }
 }
 
-class settingView extends StatelessWidget {
+class SettingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
