@@ -15,18 +15,18 @@ class ChallengePeriodView extends ConsumerStatefulWidget {
 }
 
 class _ChallengePeriodViewState extends ConsumerState<ChallengePeriodView> {
+  final int durationDays = 100;
+  final String defaultDtFormat = 'yyyy.MM.dd';
+
   DateTime _focusedDay = DateTime.now();
   RangeSelectionMode _rangeSelectionMode = RangeSelectionMode.toggledOn;
   DateTime? _selectedDay;
-  DateTime? _rangeStart; // 오늘 부터
-  DateTime? _rangeEnd; // 오늘 부터 + 시작 날짜로부터 100일 이내
+  DateTime? _rangeStart;
+  DateTime? _rangeEnd;
   String? rangeDiff = '';
 
   String formattedStartDt = '';
   String formattedEndDt = '';
-
-  final int durationDays = 100;
-  final String defaultDtFormat = 'yyyy.MM.dd';
 
   late DateTime _firstDay = DateTime.now();
   late DateTime _lastDay = _firstDay.add(
