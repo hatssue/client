@@ -103,6 +103,7 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/images/
+    - assets/images/icons/
   fonts:
     - family: noto_sans_kr
       fonts:
