@@ -19,17 +19,13 @@ class ChallengePeriodView extends ConsumerStatefulWidget {
 }
 
 class _ChallengePeriodViewState extends ConsumerState<ChallengePeriodView> {
-  CalendarFormat _calendarFormat = CalendarFormat.month;
   DateTime _focusedDay = DateTime.now();
   RangeSelectionMode _rangeSelectionMode = RangeSelectionMode.toggledOn;
   DateTime? _selectedDay;
   DateTime? _rangeStart; // 오늘 부터
   DateTime? _rangeEnd; // 오늘 부터 + 시작 날짜로부터 100일 이내
 
-  void onDaySelected(selectedDay, focusedDay) {
-    print('selectedDay : $selectedDay');
-    print('focusedDay : $focusedDay');
-  }
+  String? rangeDiff = '';
 
   @override
   Widget build(BuildContext context) {
@@ -42,59 +38,72 @@ class _ChallengePeriodViewState extends ConsumerState<ChallengePeriodView> {
           },
         ),
       ),
-      body: Column(
-        children: [
-          Text('텍스트 박스 영역', style: ref.typo.headline4),
-          const SizedBox(height: 20),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              color: Colors.white,
-              // color: ref.color.tertiary,
-              child: TableCalendar(
-                // locale: 'ko_KR',
-                // locale: LangType.ko.lang,
-                focusedDay: _focusedDay,
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          children: [
+            Text('텍스트 박스 영역', style: ref.typo.headline4),
+            const SizedBox(height: 20),
+            Text('Day + $rangeDiff', style: ref.typo.headline2),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: TableCalendar(
+                  locale: LangType.ko.lang,
+                  focusedDay: _focusedDay,
 
-                /// firstDay : first avaliable day  for the calendar
+                  /// firstDay : first avaliable day  for the calendar
 
-                firstDay: _firstDay,
+                  firstDay: _firstDay,
 
-                /// lastDay : last available day for the calendar
-                lastDay: _lastDay,
-                rangeStartDay: _rangeStart,
-                rangeEndDay: _rangeEnd,
-                calendarFormat: _calendarFormat,
-                onFormatChanged: (format) {
-                  setState(() {
-                    _calendarFormat = format;
-                  });
-                },
-                rangeSelectionMode: _rangeSelectionMode,
-                selectedDayPredicate: (day) {
-                  return isSameDay(_selectedDay, day);
-                },
-                onDaySelected: (selectedDay, focusedDay) {
-                  setState(() {
-                    _selectedDay = selectedDay;
-                    _focusedDay =
-                        focusedDay; // update `_focusedDay` here as well
-                  });
-                },
-                onRangeSelected: (start, end, focusedDay) {
-                  setState(() {
-                    _selectedDay = null;
-                    _focusedDay = focusedDay;
-                    _rangeStart = start;
-                    _rangeEnd = end;
-                    _rangeSelectionMode = RangeSelectionMode.toggledOn;
-                  });
-                },
+                  /// lastDay : last available day for the calendar
+                  lastDay: _lastDay,
+                  rangeStartDay: _rangeStart,
+                  rangeEndDay: _rangeEnd,
+                  rangeSelectionMode: _rangeSelectionMode,
+                  selectedDayPredicate: (day) {
+                    return isSameDay(_selectedDay, day);
+                  },
+                  onDaySelected: (selectedDay, focusedDay) {
+                    // DateTime newLastDay =
+                    //     selectedDay.add(const Duration(days: 7));
+                    setState(() {
+                      _selectedDay = selectedDay;
+                      _focusedDay =
+                          focusedDay; // update `_focusedDay` here as well
+                    });
+                  },
+                  onRangeSelected: (start, end, focusedDay) {
+                    // 차이 구하기
+                    // if (end != null && start != null) {
+                    //   int dayDiff = end.difference(start).inDays;
+                    //   print('dayDiff : $dayDiff');
+                    // }
+                    // 현재 선택한 날짜에 따라 마지막으로 선택 가능한 날짜 변경하기
+
+                    setState(() {
+                      _selectedDay = null;
+                      _focusedDay = focusedDay;
+                      _rangeStart = start;
+                      _rangeEnd = end;
+                      _rangeSelectionMode = RangeSelectionMode.toggledOn;
+                    });
+                  },
+
+                  headerStyle: const HeaderStyle(
+                    // 날짜 format 바꾸는 버튼 표출 여부
+                    formatButtonVisible: false,
+                  ),
+                ),
               ),
             ),
-          ),
-          // , firstDay: firstDay, lastDay: lastDay)
-        ],
+            // ),
+          ],
+        ),
       ),
     );
   }
