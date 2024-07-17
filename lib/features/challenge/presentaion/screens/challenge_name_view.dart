@@ -5,24 +5,29 @@ import 'package:hatssue/service/theme/theme_service.dart';
 import 'package:hatssue/shared/button/button.dart';
 import 'package:hatssue/shared/button/button_size.dart';
 import 'package:hatssue/shared/button/button_type.dart';
-import 'package:hatssue/theme/foundation/app_theme.dart';
 
-class ChallengeNameView extends ConsumerWidget {
+class ChallengeNameView extends ConsumerStatefulWidget {
   const ChallengeNameView({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    AppTheme theme = ref.watch(themeServiceProvider);
-    final String challengeName;
+  ConsumerState<ChallengeNameView> createState() => _ChallengeNameViewState();
+}
 
-    final List<String> egChallengeList = [
-      '🧘 스트레칭 🧘',
-      '✏️ 일기쓰기 ✏️',
-      '🚶 산책하기 🚶',
-      '📘 영어공부 📘',
-      '🌸 일찍 일어나기 🌸',
-      '🥛 물 마시기 🥛',
-    ];
+class _ChallengeNameViewState extends ConsumerState<ChallengeNameView> {
+  final List<String> egChallengeList = [
+    '🧘 스트레칭 🧘',
+    '✏️ 일기쓰기 ✏️',
+    '🚶 산책하기 🚶',
+    '📘 영어공부 📘',
+    '🌸 일찍 일어나기 🌸',
+    '🥛 물 마시기 🥛',
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    // String challengeName = '';
+
+    TextEditingController challengeNameController = TextEditingController();
 
     void onPressed(String title) {
       print('선택 $title');
@@ -36,7 +41,7 @@ class ChallengeNameView extends ConsumerWidget {
             context.go('/');
           },
         ),
-        backgroundColor: theme.color.surface,
+        backgroundColor: ref.theme.color.surface,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(
@@ -48,9 +53,9 @@ class ChallengeNameView extends ConsumerWidget {
             /// Title
             Text(
               '새로운 챌린지 만들기',
-              style: theme.typo.headline4.copyWith(
-                color: theme.color.text,
-                fontWeight: theme.typo.bold,
+              style: ref.theme.typo.headline4.copyWith(
+                color: ref.theme.color.text,
+                fontWeight: ref.theme.typo.bold,
               ),
             ),
             const SizedBox(
@@ -60,9 +65,9 @@ class ChallengeNameView extends ConsumerWidget {
             /// Sub Title
             Text(
               '시작할 챌린지 제목을 입력해주세요',
-              style: theme.typo.body1.copyWith(
-                color: theme.color.subtext,
-                fontWeight: theme.typo.regular,
+              style: ref.theme.typo.body1.copyWith(
+                color: ref.theme.color.subtext,
+                fontWeight: ref.theme.typo.regular,
               ),
             ),
             const SizedBox(
@@ -70,10 +75,21 @@ class ChallengeNameView extends ConsumerWidget {
             ),
 
             /// TextField
-            const TextField(
+            TextField(
               decoration: InputDecoration(
-                labelText: '챌린지 제목을 입력해주세요',
-                border: OutlineInputBorder(),
+                filled: true,
+                labelText: '',
+                hintText: '챌린지 제목을 입력해주세요',
+                fillColor: ref.color.textFieldContainer,
+                // focusColor: ref.color.primary,
+                // hoverColor: ref.color.primary,
+                enabledBorder: const OutlineInputBorder(
+                  borderSide: BorderSide.none,
+                ),
+              ),
+              controller: challengeNameController,
+              style: ref.typo.body1.copyWith(
+                color: ref.color.onPrimary,
               ),
             ),
             const SizedBox(
@@ -87,7 +103,7 @@ class ChallengeNameView extends ConsumerWidget {
                 Expanded(
                   child: Container(
                     height: 1,
-                    color: theme.color.subtext,
+                    color: ref.theme.color.subtext,
                   ),
                 ),
                 Padding(
@@ -95,17 +111,17 @@ class ChallengeNameView extends ConsumerWidget {
                     horizontal: 15,
                   ),
                   child: Text(
-                    '많이하는 챌린지를 추천해드려요',
-                    style: theme.typo.body2.copyWith(
-                      color: theme.color.subtext,
-                      fontWeight: theme.typo.regular,
+                    '많이 하는 챌린지를 추천해드려요',
+                    style: ref.theme.typo.body2.copyWith(
+                      color: ref.theme.color.subtext,
+                      fontWeight: ref.theme.typo.regular,
                     ),
                   ),
                 ),
                 Expanded(
                   child: Container(
                     height: 1,
-                    color: theme.color.subtext,
+                    color: ref.theme.color.subtext,
                   ),
                 ),
               ],
@@ -135,8 +151,8 @@ class ChallengeNameView extends ConsumerWidget {
                     },
                     size: ButtonSize.medium,
                     type: ButtonType.fill,
-                    color: theme.color.onPrimary,
-                    backgroundColor: theme.color.primary,
+                    color: ref.theme.color.onPrimary,
+                    backgroundColor: ref.theme.color.primary,
                     text: '다음',
                   ),
                 ),

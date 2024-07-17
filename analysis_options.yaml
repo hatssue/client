@@ -30,4 +30,5 @@ analyzer:
   plugins:
     - custom_lint
   errors:
+    dead_code: ignore
     invalid_annotation_target: ignore

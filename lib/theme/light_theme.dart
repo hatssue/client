@@ -27,6 +27,9 @@ class LightTheme implements AppTheme {
     onTertiary: Palette.blue01,
     boxContainer: Palette.grey08,
     onBoxContainer: Palette.white,
+    textFieldContainer: Palette.grey08,
+    onTextFieldContainer: Palette.white,
+    textFieldHint: Palette.grey04,
   );
 
   @override
