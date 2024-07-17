@@ -32,7 +32,8 @@ class _SplashScreenViewState extends State<SplashScreenView> {
           image: DecorationImage(
             // 임시로 런치 스크린 이미지를 피그마에 있는 것으로 사용했으나, 추후에 수정 필요
             image: AssetImage(
-                'images/splash_screen/launch_screen_image.png'), // 로컬 이미지 경로
+              'assets/images/splash_screen/launch_screen_image.png',
+            ), // 로컬 이미지 경로
             fit: BoxFit.cover,
           ),
         ),
