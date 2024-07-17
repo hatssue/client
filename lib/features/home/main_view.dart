@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hatssue/service/theme/theme_service.dart';
@@ -9,50 +7,82 @@ class MainView extends ConsumerWidget {
   const MainView({super.key});
 
   static final List<Widget> _widgetOptions = <Widget>[
-    HomeView(),
-    PastRecordView(),
-    SettingView()
+    const HomeView(),
+    const PastRecordView(),
+    const SettingView()
   ];
 
-  Widget _buildIcon(String normalIcon, String selectedIcon, int index, int selectedIndex) {
+  Widget _buildIcon(
+      String normalIcon, String selectedIcon, int index, int selectedIndex) {
     return selectedIndex == index
-        ? Image.asset(selectedIcon, width: 24, height: 24)
-        : Image.asset(normalIcon, width: 24, height: 24);
+        ? Image.asset(
+            selectedIcon,
+            width: 24,
+            height: 24,
+          )
+        : Image.asset(
+            normalIcon,
+            width: 24,
+            height: 24,
+          );
   }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final selectedIndex = ref.watch(bottomNavigationProvider);
-    final bottomNavigationNotifier = ref.read(bottomNavigationProvider.notifier);
+    final bottomNavigationNotifier = ref.read(
+      bottomNavigationProvider.notifier,
+    );
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("탑"),
+        title: const Text("탑"),
       ),
       body: _widgetOptions.elementAt(selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-              icon: _buildIcon('assets/images/icons/home.png', 'assets/images/icons/home_selected.png', 0, selectedIndex),
-              label: '홈',
+            icon: _buildIcon(
+              'assets/images/icons/home.png',
+              'assets/images/icons/home_selected.png',
+              0,
+              selectedIndex,
+            ),
+            label: '홈',
           ),
           BottomNavigationBarItem(
-              icon: _buildIcon('assets/images/icons/memo.png', 'assets/images/icons/memo_selected.png', 1, selectedIndex),
-              label: '지난 기록'
+            icon: _buildIcon(
+              'assets/images/icons/memo.png',
+              'assets/images/icons/memo_selected.png',
+              1,
+              selectedIndex,
+            ),
+            label: '지난 기록',
           ),
           BottomNavigationBarItem(
-              icon: _buildIcon('assets/images/icons/gear.png', 'assets/images/icons/gear_selected.png', 2, selectedIndex),
-              label: '설정'
+            icon: _buildIcon(
+              'assets/images/icons/gear.png',
+              'assets/images/icons/gear_selected.png',
+              2,
+              selectedIndex,
+            ),
+            label: '설정',
           ),
         ],
         currentIndex: selectedIndex,
-        selectedItemColor: Color(0xFFADD8FB),
-        unselectedItemColor: Color(0xFF9E9E9E),
+        selectedItemColor: const Color(0xFFADD8FB),
+        unselectedItemColor: const Color(0xFF9E9E9E),
         backgroundColor: ref.theme.color.surface,
 
         // 폰트 적용이 안됨
-        selectedLabelStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
-        unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
+        selectedLabelStyle: const TextStyle(
+          fontWeight: FontWeight.w500,
+          fontSize: 12,
+        ),
+        unselectedLabelStyle: const TextStyle(
+          fontWeight: FontWeight.w500,
+          fontSize: 12,
+        ),
         onTap: (index) {
           bottomNavigationNotifier.selectTab(index);
         },
@@ -62,27 +92,33 @@ class MainView extends ConsumerWidget {
 }
 
 class HomeView extends StatelessWidget {
+  const HomeView({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text('First Page'),
     );
   }
 }
 
 class PastRecordView extends StatelessWidget {
+  const PastRecordView({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text('Second Page'),
     );
   }
 }
 
 class SettingView extends StatelessWidget {
+  const SettingView({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text('Third Page'),
     );
   }
@@ -100,6 +136,7 @@ class BottomNavigationState extends StateNotifier<int> {
 
 // 얘네는 어디로 가야하오 2..
 // StateNotifierProvider 정의
-final bottomNavigationProvider = StateNotifierProvider<BottomNavigationState, int>((ref) {
+final bottomNavigationProvider =
+    StateNotifierProvider<BottomNavigationState, int>((ref) {
   return BottomNavigationState();
 });
