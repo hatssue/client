@@ -105,6 +105,7 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/
+    - assets/images/icons/
     - assets/images/splash_screen/
   fonts:
     - family: noto_sans_kr
