@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hatssue/features/challenge/presentaion/widgets/text_box.dart';
 import 'package:hatssue/service/theme/theme_service.dart';
 import 'package:hatssue/utils/intl_helper.dart';
 import 'package:intl/intl.dart';
@@ -51,57 +52,51 @@ class _ChallengePeriodViewState extends ConsumerState<ChallengePeriodView> {
         child: Column(
           children: [
             if (rangeDiff != '')
-              Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: ref.color.tertiary,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(6.0),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            '오늘부터 Day',
-                            style: ref.typo.body1.copyWith(
-                              color: Colors.white,
-                              fontWeight: ref.typo.medium,
-                            ),
+              TextBox(
+                // padding: 6,
+                boxColor: ref.color.boxContainer,
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          '오늘부터 Day',
+                          style: ref.typo.body1.copyWith(
+                            color: Colors.white,
+                            fontWeight: ref.typo.medium,
                           ),
-                          const SizedBox(width: 5),
-                          Text(
-                            '+',
-                            style: ref.typo.body1.copyWith(
-                              color: Colors.white,
-                              fontWeight: ref.typo.medium,
-                            ),
-                          ),
-                          const SizedBox(width: 5),
-                          Text(
-                            '$rangeDiff',
-                            style: ref.typo.body1.copyWith(
-                              color: ref.color.onTertiary,
-                              fontWeight: ref.typo.medium,
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 2,
-                      ),
-                      Text(
-                        ' $formattedStartDt ~ $formattedEndDt',
-                        style: ref.typo.body2.copyWith(
-                          fontSize: 11,
-                          fontWeight: ref.typo.regular,
-                          color: const Color(0xFF929292),
                         ),
+                        const SizedBox(width: 5),
+                        Text(
+                          '+',
+                          style: ref.typo.body1.copyWith(
+                            color: Colors.white,
+                            fontWeight: ref.typo.medium,
+                          ),
+                        ),
+                        const SizedBox(width: 5),
+                        Text(
+                          '$rangeDiff',
+                          style: ref.typo.body1.copyWith(
+                            color: ref.color.onTertiary,
+                            fontWeight: ref.typo.medium,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 2,
+                    ),
+                    Text(
+                      ' $formattedStartDt ~ $formattedEndDt',
+                      style: ref.typo.body2.copyWith(
+                        fontSize: 11,
+                        fontWeight: ref.typo.regular,
+                        color: const Color(0xFF929292),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             const SizedBox(height: 20),
@@ -172,7 +167,6 @@ class _ChallengePeriodViewState extends ConsumerState<ChallengePeriodView> {
                 ),
               ),
             ),
-            // ),
           ],
         ),
       ),

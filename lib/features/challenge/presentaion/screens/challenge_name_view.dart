@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hatssue/features/challenge/presentaion/widgets/text_box.dart';
 import 'package:hatssue/service/theme/theme_service.dart';
 import 'package:hatssue/shared/button/button.dart';
 import 'package:hatssue/shared/button/button_size.dart';
@@ -138,6 +139,7 @@ class DefaultChallengeListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      padding: const EdgeInsets.all(0),
       children: [
         ChallengeButton(
           title: '🧘 스트레칭 🧘',
@@ -174,9 +176,8 @@ class DefaultChallengeListView extends StatelessWidget {
   }
 }
 
-class ChallengeButton extends StatelessWidget {
+class ChallengeButton extends ConsumerWidget {
   final String title;
-
   final Function(String title) onPressed;
 
   const ChallengeButton({
@@ -186,23 +187,31 @@ class ChallengeButton extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
-    return Consumer(
-      builder: (context, ref, child) {
-        final AppTheme theme = ref.watch(themeServiceProvider);
-        return Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          child: Button(
-            onPressed: () {
-              onPressed(title);
-            },
-            color: theme.color.onSecondary,
-            backgroundColor: theme.color.secondary,
-            text: title,
-            size: ButtonSize.small,
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      child: GestureDetector(
+        onTap: () {
+          onPressed(title);
+        },
+        child: Container(
+          decoration: BoxDecoration(
+            color: ref.color.secondary,
+            borderRadius: BorderRadius.circular(10),
           ),
-        );
-      },
+          child: Padding(
+            padding: const EdgeInsets.all(10.5),
+            child: Text(
+              textAlign: TextAlign.center,
+              title,
+              style: ref.typo.body2.copyWith(
+                fontSize: 13,
+                fontWeight: ref.typo.medium,
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
