@@ -1,36 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hatssue/features/challenge/presentaion/providers/challenge_provider.dart';
 import 'package:hatssue/service/theme/theme_service.dart';
 import 'package:hatssue/shared/button/button.dart';
 import 'package:hatssue/shared/button/button_size.dart';
 import 'package:hatssue/shared/button/button_type.dart';
 
-class ChallengeNameView extends ConsumerStatefulWidget {
+final List<String> egChallengeList = [
+  '🧘 스트레칭 🧘',
+  '✏️ 일기쓰기 ✏️',
+  '🚶 산책하기 🚶',
+  '📘 영어공부 📘',
+  '🌸 일찍 일어나기 🌸',
+  '🥛 물 마시기 🥛',
+];
+
+class ChallengeNameView extends ConsumerWidget {
   const ChallengeNameView({super.key});
 
   @override
-  ConsumerState<ChallengeNameView> createState() => _ChallengeNameViewState();
-}
-
-class _ChallengeNameViewState extends ConsumerState<ChallengeNameView> {
-  final List<String> egChallengeList = [
-    '🧘 스트레칭 🧘',
-    '✏️ 일기쓰기 ✏️',
-    '🚶 산책하기 🚶',
-    '📘 영어공부 📘',
-    '🌸 일찍 일어나기 🌸',
-    '🥛 물 마시기 🥛',
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    // String challengeName = '';
-
+  Widget build(BuildContext context, WidgetRef ref) {
     TextEditingController challengeNameController = TextEditingController();
 
     void onPressed(String title) {
-      print('선택 $title');
+      challengeNameController.text = title;
+    }
+
+    void createChallengeTest() {
+      String name = challengeNameController.text;
+      ref.watch(challengeNotiferProvider.notifier).createChallengeTest(name);
     }
 
     return Scaffold(
@@ -50,6 +49,13 @@ class _ChallengeNameViewState extends ConsumerState<ChallengeNameView> {
         ),
         child: Column(
           children: [
+            Text(
+              '저장된 거 : ${ref.watch(challengeNotiferProvider).name}',
+              style: ref.theme.typo.body1.copyWith(
+                color: ref.theme.color.text,
+              ),
+            ),
+
             /// Title
             Text(
               '새로운 챌린지 만들기',
@@ -78,19 +84,24 @@ class _ChallengeNameViewState extends ConsumerState<ChallengeNameView> {
             TextField(
               decoration: InputDecoration(
                 filled: true,
+                border: const OutlineInputBorder(
+                  borderSide: BorderSide.none,
+                ),
                 labelText: '',
                 hintText: '챌린지 제목을 입력해주세요',
                 fillColor: ref.color.textFieldContainer,
-                // focusColor: ref.color.primary,
-                // hoverColor: ref.color.primary,
-                enabledBorder: const OutlineInputBorder(
-                  borderSide: BorderSide.none,
+                hintStyle: TextStyle(
+                  color: ref.color.textFieldHint,
                 ),
               ),
               controller: challengeNameController,
               style: ref.typo.body1.copyWith(
-                color: ref.color.onPrimary,
+                color: ref.color.onTextFieldContainer,
               ),
+              cursorColor: ref.color.textFieldHint,
+              onSubmitted: (value) {
+                createChallengeTest();
+              },
             ),
             const SizedBox(
               height: 30,
@@ -147,13 +158,15 @@ class _ChallengeNameViewState extends ConsumerState<ChallengeNameView> {
                 Expanded(
                   child: Button(
                     onPressed: () {
-                      context.go('/newChallengeNotificationPage');
+                      createChallengeTest();
+                      // context.go('/newChallengeNotificationPage');
                     },
                     size: ButtonSize.medium,
                     type: ButtonType.fill,
                     color: ref.theme.color.onPrimary,
                     backgroundColor: ref.theme.color.primary,
-                    text: '다음',
+                    // text: '다음',
+                    text: '저장 테스트',
                   ),
                 ),
               ],

@@ -22,8 +22,8 @@ Challenge _$ChallengeFromJson(Map<String, dynamic> json) {
 mixin _$Challenge {
   String get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  String get startDt => throw _privateConstructorUsedError; // 시작 날짜
-  String get endDt => throw _privateConstructorUsedError;
+  DateTime? get startDt => throw _privateConstructorUsedError; // 시작 날짜
+  DateTime? get endDt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -36,7 +36,7 @@ abstract class $ChallengeCopyWith<$Res> {
   factory $ChallengeCopyWith(Challenge value, $Res Function(Challenge) then) =
       _$ChallengeCopyWithImpl<$Res, Challenge>;
   @useResult
-  $Res call({String id, String name, String startDt, String endDt});
+  $Res call({String id, String name, DateTime? startDt, DateTime? endDt});
 }
 
 /// @nodoc
@@ -54,8 +54,8 @@ class _$ChallengeCopyWithImpl<$Res, $Val extends Challenge>
   $Res call({
     Object? id = null,
     Object? name = null,
-    Object? startDt = null,
-    Object? endDt = null,
+    Object? startDt = freezed,
+    Object? endDt = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -66,14 +66,14 @@ class _$ChallengeCopyWithImpl<$Res, $Val extends Challenge>
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      startDt: null == startDt
+      startDt: freezed == startDt
           ? _value.startDt
           : startDt // ignore: cast_nullable_to_non_nullable
-              as String,
-      endDt: null == endDt
+              as DateTime?,
+      endDt: freezed == endDt
           ? _value.endDt
           : endDt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime?,
     ) as $Val);
   }
 }
@@ -86,7 +86,7 @@ abstract class _$$ChallengeImplCopyWith<$Res>
       __$$ChallengeImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String id, String name, String startDt, String endDt});
+  $Res call({String id, String name, DateTime? startDt, DateTime? endDt});
 }
 
 /// @nodoc
@@ -102,8 +102,8 @@ class __$$ChallengeImplCopyWithImpl<$Res>
   $Res call({
     Object? id = null,
     Object? name = null,
-    Object? startDt = null,
-    Object? endDt = null,
+    Object? startDt = freezed,
+    Object? endDt = freezed,
   }) {
     return _then(_$ChallengeImpl(
       id: null == id
@@ -114,14 +114,14 @@ class __$$ChallengeImplCopyWithImpl<$Res>
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      startDt: null == startDt
+      startDt: freezed == startDt
           ? _value.startDt
           : startDt // ignore: cast_nullable_to_non_nullable
-              as String,
-      endDt: null == endDt
+              as DateTime?,
+      endDt: freezed == endDt
           ? _value.endDt
           : endDt // ignore: cast_nullable_to_non_nullable
-              as String,
+              as DateTime?,
     ));
   }
 }
@@ -143,10 +143,10 @@ class _$ChallengeImpl implements _Challenge {
   @override
   final String name;
   @override
-  final String startDt;
+  final DateTime? startDt;
 // 시작 날짜
   @override
-  final String endDt;
+  final DateTime? endDt;
 
   @override
   String toString() {
@@ -186,8 +186,8 @@ abstract class _Challenge implements Challenge {
   const factory _Challenge(
       {required final String id,
       required final String name,
-      required final String startDt,
-      required final String endDt}) = _$ChallengeImpl;
+      required final DateTime? startDt,
+      required final DateTime? endDt}) = _$ChallengeImpl;
 
   factory _Challenge.fromJson(Map<String, dynamic> json) =
       _$ChallengeImpl.fromJson;
@@ -197,9 +197,9 @@ abstract class _Challenge implements Challenge {
   @override
   String get name;
   @override
-  String get startDt;
+  DateTime? get startDt;
   @override // 시작 날짜
-  String get endDt;
+  DateTime? get endDt;
   @override
   @JsonKey(ignore: true)
   _$$ChallengeImplCopyWith<_$ChallengeImpl> get copyWith =>
