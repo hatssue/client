@@ -99,4 +99,6 @@ lib/generated_plugin_registrant.dart
 ./idea/
 
 
-customer_lint.log
+./custom_lint.log
+
+custom_lint.log
