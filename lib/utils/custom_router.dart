@@ -33,7 +33,7 @@ class CustomRouter {
     ),
     GoRoute(
       path: "/challengeView",
-      builder: (context, state) => const ChallengeNameView(),
+      builder: (context, state) => ChallengeNameView(),
     ),
     GoRoute(
       path: '/challengePeriodView',

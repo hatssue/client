@@ -21,9 +21,11 @@ Challenge _$ChallengeFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Challenge {
   String get id => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  DateTime? get startDt => throw _privateConstructorUsedError; // 시작 날짜
-  DateTime? get endDt => throw _privateConstructorUsedError;
+  String get name =>
+      throw _privateConstructorUsedError; // required DateTime? startDt, // 시작 날짜
+// required DateTime? endDt, // 종료 날짜
+  int? get startDt => throw _privateConstructorUsedError; // 시작 날짜
+  int? get endDt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -36,7 +38,7 @@ abstract class $ChallengeCopyWith<$Res> {
   factory $ChallengeCopyWith(Challenge value, $Res Function(Challenge) then) =
       _$ChallengeCopyWithImpl<$Res, Challenge>;
   @useResult
-  $Res call({String id, String name, DateTime? startDt, DateTime? endDt});
+  $Res call({String id, String name, int? startDt, int? endDt});
 }
 
 /// @nodoc
@@ -69,11 +71,11 @@ class _$ChallengeCopyWithImpl<$Res, $Val extends Challenge>
       startDt: freezed == startDt
           ? _value.startDt
           : startDt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as int?,
       endDt: freezed == endDt
           ? _value.endDt
           : endDt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as int?,
     ) as $Val);
   }
 }
@@ -86,7 +88,7 @@ abstract class _$$ChallengeImplCopyWith<$Res>
       __$$ChallengeImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String id, String name, DateTime? startDt, DateTime? endDt});
+  $Res call({String id, String name, int? startDt, int? endDt});
 }
 
 /// @nodoc
@@ -117,11 +119,11 @@ class __$$ChallengeImplCopyWithImpl<$Res>
       startDt: freezed == startDt
           ? _value.startDt
           : startDt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as int?,
       endDt: freezed == endDt
           ? _value.endDt
           : endDt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as int?,
     ));
   }
 }
@@ -142,11 +144,13 @@ class _$ChallengeImpl implements _Challenge {
   final String id;
   @override
   final String name;
+// required DateTime? startDt, // 시작 날짜
+// required DateTime? endDt, // 종료 날짜
   @override
-  final DateTime? startDt;
+  final int? startDt;
 // 시작 날짜
   @override
-  final DateTime? endDt;
+  final int? endDt;
 
   @override
   String toString() {
@@ -186,8 +190,8 @@ abstract class _Challenge implements Challenge {
   const factory _Challenge(
       {required final String id,
       required final String name,
-      required final DateTime? startDt,
-      required final DateTime? endDt}) = _$ChallengeImpl;
+      required final int? startDt,
+      required final int? endDt}) = _$ChallengeImpl;
 
   factory _Challenge.fromJson(Map<String, dynamic> json) =
       _$ChallengeImpl.fromJson;
@@ -196,10 +200,11 @@ abstract class _Challenge implements Challenge {
   String get id;
   @override
   String get name;
-  @override
-  DateTime? get startDt;
+  @override // required DateTime? startDt, // 시작 날짜
+// required DateTime? endDt, // 종료 날짜
+  int? get startDt;
   @override // 시작 날짜
-  DateTime? get endDt;
+  int? get endDt;
   @override
   @JsonKey(ignore: true)
   _$$ChallengeImplCopyWith<_$ChallengeImpl> get copyWith =>

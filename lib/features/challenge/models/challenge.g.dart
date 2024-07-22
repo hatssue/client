@@ -10,18 +10,14 @@ _$ChallengeImpl _$$ChallengeImplFromJson(Map<String, dynamic> json) =>
     _$ChallengeImpl(
       id: json['id'] as String,
       name: json['name'] as String,
-      startDt: json['startDt'] == null
-          ? null
-          : DateTime.parse(json['startDt'] as String),
-      endDt: json['endDt'] == null
-          ? null
-          : DateTime.parse(json['endDt'] as String),
+      startDt: (json['startDt'] as num?)?.toInt(),
+      endDt: (json['endDt'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$$ChallengeImplToJson(_$ChallengeImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
-      'startDt': instance.startDt?.toIso8601String(),
-      'endDt': instance.endDt?.toIso8601String(),
+      'startDt': instance.startDt,
+      'endDt': instance.endDt,
     };

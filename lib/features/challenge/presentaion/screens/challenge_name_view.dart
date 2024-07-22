@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hatssue/features/challenge/models/challenge.dart';
 import 'package:hatssue/features/challenge/presentaion/providers/challenge_provider.dart';
 import 'package:hatssue/service/theme/theme_service.dart';
 import 'package:hatssue/shared/button/button.dart';
 import 'package:hatssue/shared/button/button_size.dart';
 import 'package:hatssue/shared/button/button_type.dart';
+import 'package:hatssue/utils/database_helper.dart';
+import 'package:uuid/uuid.dart';
 
 final List<String> egChallengeList = [
   '🧘 스트레칭 🧘',
@@ -17,7 +20,9 @@ final List<String> egChallengeList = [
 ];
 
 class ChallengeNameView extends ConsumerWidget {
-  const ChallengeNameView({super.key});
+  ChallengeNameView({super.key});
+
+  final DatabaseHelper dbHelper = DatabaseHelper();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -30,6 +35,20 @@ class ChallengeNameView extends ConsumerWidget {
     void createChallengeTest() {
       String name = challengeNameController.text;
       ref.watch(challengeNotiferProvider.notifier).createChallengeTest(name);
+    }
+
+    void createChallengeInLocal() async {
+      String name = challengeNameController.text;
+      int result = await dbHelper.insertChallenge(
+        Challenge(
+          id: const Uuid().v4(),
+          name: name,
+          startDt: DateTime.now().microsecondsSinceEpoch,
+          endDt: DateTime.now().microsecondsSinceEpoch,
+        ),
+      );
+      print(result);
+      challengeNameController.clear();
     }
 
     return Scaffold(
@@ -100,7 +119,8 @@ class ChallengeNameView extends ConsumerWidget {
               ),
               cursorColor: ref.color.textFieldHint,
               onSubmitted: (value) {
-                createChallengeTest();
+                createChallengeInLocal();
+                // createChallengeTest();
               },
             ),
             const SizedBox(
@@ -158,7 +178,8 @@ class ChallengeNameView extends ConsumerWidget {
                 Expanded(
                   child: Button(
                     onPressed: () {
-                      createChallengeTest();
+                      createChallengeInLocal();
+                      // createChallengeTest();
                       // context.go('/newChallengeNotificationPage');
                     },
                     size: ButtonSize.medium,

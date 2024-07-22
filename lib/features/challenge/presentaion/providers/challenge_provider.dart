@@ -10,16 +10,16 @@ class ChallengeNotifer extends _$ChallengeNotifer {
   Challenge build() => Challenge(
         id: '',
         name: '',
-        startDt: DateTime.now(),
-        endDt: DateTime.now(),
+        startDt: DateTime.now().microsecondsSinceEpoch,
+        endDt: DateTime.now().microsecondsSinceEpoch,
       );
 
   void createChallenge(Challenge challenge) {
     state = state.copyWith(
       id: const Uuid().v4(),
       name: challenge.name,
-      startDt: DateTime.now(),
-      endDt: DateTime.now(),
+      startDt: DateTime.now().microsecondsSinceEpoch,
+      endDt: DateTime.now().microsecondsSinceEpoch,
     );
   }
 
@@ -27,8 +27,8 @@ class ChallengeNotifer extends _$ChallengeNotifer {
     state = state.copyWith(
       id: const Uuid().v4(),
       name: name,
-      startDt: DateTime.now(),
-      endDt: DateTime.now(),
+      startDt: DateTime.now().microsecondsSinceEpoch,
+      endDt: DateTime.now().microsecondsSinceEpoch,
     );
     print('state : $state');
   }
