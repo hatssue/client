@@ -3,7 +3,7 @@ import 'package:hatssue/features/calendar/calendar_view.dart';
 import 'package:hatssue/features/challenge/presentaion/screens/challenge_period_view.dart';
 import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_notification_page.dart';
 import 'package:hatssue/features/challenge/presentaion/screens/new_challenge_page.dart';
-import 'package:hatssue/features/home/home_view.dart';
+import 'package:hatssue/features/home/buttons_view.dart';
 import 'package:hatssue/features/home/main_view.dart';
 import 'package:hatssue/features/samples/calendar_sample_view.dart';
 import 'package:hatssue/features/splash/splash_screen_view.dart';
@@ -33,7 +33,7 @@ class CustomRouter {
     ),
     GoRoute(
       path: "/myHomePage",
-      builder: (context, state) => const Home(title: "제목"),
+      builder: (context, state) => const ButtonsView(title: "제목"),
     ),
     GoRoute(
       path: "/challengeView",
