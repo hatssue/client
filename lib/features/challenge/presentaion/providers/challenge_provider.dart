@@ -30,6 +30,5 @@ class ChallengeNotifer extends _$ChallengeNotifer {
       startDt: DateTime.now().microsecondsSinceEpoch,
       endDt: DateTime.now().microsecondsSinceEpoch,
     );
-    print('state : $state');
   }
 }
