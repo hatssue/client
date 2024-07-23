@@ -18,7 +18,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
     // 일정 시간 뒤 다른 화면으로 이동
     Timer(const Duration(seconds: 1), () {
       // 앱을 구동하기 위한 기초 설정을 마친 뒤 메인 화면으로 이동
-      context.go('/myHomePage');
+      context.go('/mainView');
     });
   }
 

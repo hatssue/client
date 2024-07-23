@@ -1,6 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:hatssue/features/home/home_view.dart';
+import 'package:hatssue/features/home/past_record_view.dart';
+import 'package:hatssue/features/home/setting_view.dart';
 import 'package:hatssue/service/theme/theme_service.dart';
+
+class BottomNavigationState extends StateNotifier<int> {
+  BottomNavigationState() : super(0);
+
+  void selectTab(int index) {
+    state = index;
+  }
+}
+
+final bottomNavigationProvider =
+    StateNotifierProvider<BottomNavigationState, int>((ref) {
+  return BottomNavigationState();
+});
 
 // 기본 화면 구조 설정
 class MainView extends ConsumerWidget {
@@ -36,7 +52,10 @@ class MainView extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("탑"),
+        title: const Text(
+          "탑",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: _widgetOptions.elementAt(selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
@@ -90,53 +109,3 @@ class MainView extends ConsumerWidget {
     );
   }
 }
-
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Text('First Page'),
-    );
-  }
-}
-
-class PastRecordView extends StatelessWidget {
-  const PastRecordView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Text('Second Page'),
-    );
-  }
-}
-
-class SettingView extends StatelessWidget {
-  const SettingView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Text('Third Page'),
-    );
-  }
-}
-
-// 얘네는 어디로 가야하오 1..
-// StateNotifier 정의
-class BottomNavigationState extends StateNotifier<int> {
-  BottomNavigationState() : super(0);
-
-  void selectTab(int index) {
-    state = index;
-  }
-}
-
-// 얘네는 어디로 가야하오 2..
-// StateNotifierProvider 정의
-final bottomNavigationProvider =
-    StateNotifierProvider<BottomNavigationState, int>((ref) {
-  return BottomNavigationState();
-});
