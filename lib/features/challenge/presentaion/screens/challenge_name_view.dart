@@ -34,7 +34,15 @@ class ChallengeNameView extends ConsumerWidget {
 
     void createChallengeTest() {
       String name = challengeNameController.text;
-      ref.watch(challengeNotiferProvider.notifier).createChallengeTest(name);
+      Challenge newChallenge = Challenge(
+        id: const Uuid().v4(),
+        name: name,
+        startDt: DateTime.now().toString(),
+        endDt: DateTime.now().toString(),
+      );
+      ref
+          .watch(challengeNotiferProvider.notifier)
+          .createChallenge(newChallenge);
     }
 
     void createChallengeInLocal() async {
@@ -43,8 +51,8 @@ class ChallengeNameView extends ConsumerWidget {
         Challenge(
           id: const Uuid().v4(),
           name: name,
-          startDt: DateTime.now().microsecondsSinceEpoch,
-          endDt: DateTime.now().microsecondsSinceEpoch,
+          startDt: DateTime.now().toString(),
+          endDt: DateTime.now().toString(),
         ),
       );
       print(result);
@@ -119,8 +127,8 @@ class ChallengeNameView extends ConsumerWidget {
               ),
               cursorColor: ref.color.textFieldHint,
               onSubmitted: (value) {
-                createChallengeInLocal();
-                // createChallengeTest();
+                // createChallengeInLocal();
+                createChallengeTest();
               },
             ),
             const SizedBox(
@@ -178,9 +186,8 @@ class ChallengeNameView extends ConsumerWidget {
                 Expanded(
                   child: Button(
                     onPressed: () {
-                      createChallengeInLocal();
-                      // createChallengeTest();
-                      // context.go('/newChallengeNotificationPage');
+                      createChallengeTest();
+                      // createChallengeInLocal();
                     },
                     size: ButtonSize.medium,
                     type: ButtonType.fill,

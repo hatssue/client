@@ -10,8 +10,8 @@ _$ChallengeImpl _$$ChallengeImplFromJson(Map<String, dynamic> json) =>
     _$ChallengeImpl(
       id: json['id'] as String,
       name: json['name'] as String,
-      startDt: (json['startDt'] as num?)?.toInt(),
-      endDt: (json['endDt'] as num?)?.toInt(),
+      startDt: json['startDt'] as String?,
+      endDt: json['endDt'] as String?,
     );
 
 Map<String, dynamic> _$$ChallengeImplToJson(_$ChallengeImpl instance) =>

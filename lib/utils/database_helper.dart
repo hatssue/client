@@ -42,7 +42,6 @@ class DatabaseHelper {
 
   Future<int> insertChallenge(Challenge challenge) async {
     print('insert ===== ');
-
     Database db = await database;
     print('db : $db');
     return await db.insert(challengeTable, challenge.toJson());
