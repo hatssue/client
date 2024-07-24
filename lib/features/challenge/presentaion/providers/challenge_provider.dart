@@ -9,16 +9,17 @@ class ChallengeNotifer extends _$ChallengeNotifer {
   Challenge build() => Challenge(
         id: '',
         name: '',
-        startDt: DateTime.now().toString(),
-        endDt: DateTime.now().toString(),
+        // TODO: 디폴트 값을 Nullable로 줄 수 있는지 찾기
+        startDt: DateTime.now(),
+        endDt: DateTime.now(),
       );
 
   void createChallenge(Challenge challenge) {
     state = state.copyWith(
       id: challenge.id,
       name: challenge.name,
-      startDt: challenge.name,
-      endDt: challenge.name,
+      startDt: challenge.startDt,
+      endDt: challenge.endDt,
     );
   }
 }

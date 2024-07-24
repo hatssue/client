@@ -29,8 +29,8 @@ class DatabaseHelper {
       index INTEGER PRIMARY KEY AUTOINCREMENT,
       id TEXT PRIMARY KEY, 
       name TEXT NOT NULL,
-      startDt INTEGER,
-      endDt INTEGER,
+      startDt TEXT,
+      endDt TEXT,
       )''',
     );
   }
@@ -43,8 +43,16 @@ class DatabaseHelper {
   Future<int> insertChallenge(Challenge challenge) async {
     print('insert ===== ');
     Database db = await database;
-    print('db : $db');
-    return await db.insert(challengeTable, challenge.toJson());
+    DbChallenge challengeJson = DbChallenge(
+      id: challenge.id,
+      name: challenge.name,
+      startDt: challenge.startDt.toString(),
+      endDt: challenge.endDt.toString(),
+    );
+    return await db.insert(
+      challengeTable,
+      challengeJson.toJson(),
+    );
   }
 
   Future<List<Map<String, Object?>>> getChallengeById({

@@ -37,8 +37,8 @@ class ChallengeNameView extends ConsumerWidget {
       Challenge newChallenge = Challenge(
         id: const Uuid().v4(),
         name: name,
-        startDt: DateTime.now().toString(),
-        endDt: DateTime.now().toString(),
+        startDt: DateTime.now(),
+        endDt: DateTime.now(),
       );
       ref
           .watch(challengeNotiferProvider.notifier)
@@ -51,8 +51,8 @@ class ChallengeNameView extends ConsumerWidget {
         Challenge(
           id: const Uuid().v4(),
           name: name,
-          startDt: DateTime.now().toString(),
-          endDt: DateTime.now().toString(),
+          startDt: DateTime.now(),
+          endDt: DateTime.now(),
         ),
       );
       print(result);
