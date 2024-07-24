@@ -28,6 +28,10 @@ class CustomRouter {
       path: "/newChallengeNotificationPage",
       builder: (context, state) => const NewChallengeNotificationPage(),
     ),
+    GoRoute(
+      path: "/myHomePage",
+      builder: (context, state) => const ButtonsView(title: "제목"),
+    ),
     // GoRoute(
     //   path: "/challengeView",
     //   builder: (context, state) => const NewChallengePage(),
