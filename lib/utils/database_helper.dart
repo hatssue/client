@@ -25,14 +25,7 @@ class DatabaseHelper {
 
   Future _onCreate(Database db, int version) async {
     await db.execute(
-      '''CREATE TABLE Challenge(
-      index INTEGER PRIMARY KEY AUTOINCREMENT,
-      id TEXT PRIMARY KEY, 
-      name TEXT NOT NULL,
-      startDt TEXT,
-      endDt TEXT,
-      )''',
-    );
+        'CREATE TABLE Challenge (id TEXT PRIMARY KEY, name TEXT NOT NULL, startDt TEXT, endDt TEXT)');
   }
 
   Future close() async {
