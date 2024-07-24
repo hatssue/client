@@ -10,25 +10,16 @@ class ChallengeNotifer extends _$ChallengeNotifer {
   Challenge build() => Challenge(
         id: '',
         name: '',
-        startDt: DateTime.now().microsecondsSinceEpoch,
-        endDt: DateTime.now().microsecondsSinceEpoch,
+        startDt: DateTime.now().toString(),
+        endDt: DateTime.now().toString(),
       );
 
   void createChallenge(Challenge challenge) {
     state = state.copyWith(
-      id: const Uuid().v4(),
+      id: challenge.id,
       name: challenge.name,
-      startDt: DateTime.now().microsecondsSinceEpoch,
-      endDt: DateTime.now().microsecondsSinceEpoch,
-    );
-  }
-
-  void createChallengeTest(String name) {
-    state = state.copyWith(
-      id: const Uuid().v4(),
-      name: name,
-      startDt: DateTime.now().microsecondsSinceEpoch,
-      endDt: DateTime.now().microsecondsSinceEpoch,
+      startDt: challenge.name,
+      endDt: challenge.name,
     );
   }
 }
