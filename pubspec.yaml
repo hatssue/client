@@ -108,6 +108,7 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/
+    - assets/images/hattue/
     - assets/images/icons/
     - assets/images/splash_screen/
   fonts:
