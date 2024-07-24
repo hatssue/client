@@ -1,4 +1,5 @@
 // TODO: 피그마 디자인 시스템과 싱크 맞추기
+// TODO: 변수명 짓는 기준이 뭐가 되어야 하지
 
 part of 'app_theme.dart';
 
@@ -22,6 +23,11 @@ class AppColor {
     required this.onSecondary,
     required this.tertiary,
     required this.onTertiary,
+    required this.boxContainer,
+    required this.onBoxContainer,
+    required this.textFieldContainer,
+    required this.onTextFieldContainer,
+    required this.textFieldHint,
   });
 
   /// Surface
@@ -53,4 +59,13 @@ class AppColor {
   final Color onSecondary;
   final Color tertiary;
   final Color onTertiary;
+
+  /// Box
+  final Color boxContainer;
+  final Color onBoxContainer;
+
+  /// TextField
+  final Color textFieldContainer; // bg
+  final Color onTextFieldContainer; // text color
+  final Color textFieldHint;
 }

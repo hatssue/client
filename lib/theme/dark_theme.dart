@@ -9,7 +9,9 @@ class DarkTheme implements AppTheme {
     surface: Palette.primary02,
     // background: background,
     text: Palette.grey01,
-    subtext: Palette.grey04, // 임시
+    subtext: Palette.grey04,
+
+    /// 임시
     // toastContainer: toastContainer,
     // onToastContainer: onToastContainer,
     // hint: hint,
@@ -24,6 +26,11 @@ class DarkTheme implements AppTheme {
     onSecondary: Palette.grey01,
     tertiary: Palette.grey09,
     onTertiary: Palette.blue01,
+    boxContainer: Palette.grey08,
+    onBoxContainer: Palette.white,
+    textFieldContainer: Palette.grey08,
+    onTextFieldContainer: Palette.white,
+    textFieldHint: Palette.grey04,
   );
 
   @override
