@@ -186,8 +186,8 @@ class ChallengeNameView extends ConsumerWidget {
                 Expanded(
                   child: Button(
                     onPressed: () {
-                      createChallengeTest();
-                      // createChallengeInLocal();
+                      // createChallengeTest();
+                      createChallengeInLocal();
                     },
                     size: ButtonSize.medium,
                     type: ButtonType.fill,
